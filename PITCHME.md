@@ -1,0 +1,113 @@
+### SCRABBLE SCORE EXERCISM CHALLENGE:
+PRESENTED BY:GAEL JEROP
+
+---
+
+
+##ABOUT ME:
+
+
+An environmental engineer passionate about coding ,
+
+Still a newbie started with Ruby on Rails about 8 months ago
+
+<!--  -->![IMAGE](assets/img/code.jpg)
+
+---?color=linear-gradient(180deg, white 75%, black 25%)
+@title[The Exercism challenge]
+
+@snap[west span-55]
+## The  challenge:
+Each letter of the alphabet is assigned a value
+given a certain input calculate the score
+@snapend
+
+@snap[north-east span-45]
+!<!-- [IMAGE](assets/img/presentation.png) -->
+@snapend
+
+@snap[south span-100]
+Snap Layouts let you create custom slide designs directly within your markdown.
+@snapend
+
+---
+@title[Add A Little Imagination]
+
+@snap[north-west span-50 text-center]
+#### Engage your Audience
+@snapend
+
+@snap[west span-55]
+@ul[list-spaced-bullets text-09]
+- You will be amazed
+- What you can achieve
+- With a **little imagination**
+- And GitPitch Markdown
+@ulend
+@snapend
+
+@snap[east span-45]
+![IMAGE](assets/img/conference.png)
+@snapend
+
+@snap[south span-100 bg-black fragment]
+@img[shadow](assets/img/conference.png)
+@snapend
+
+---
+
+<!--  -->@snap[north-east span-100 text-pink text-06]
+The code
+@snapend
+
+```ruby
+module Scrabble	
+
+		attr_reader :word
+		def initialize(word)
+			@word = word
+			@word = " " if word == nil || word.length == 0
+			@word = @word.gsub(/\W/,"").upcase
+		 end		
+		def score(word)
+			 letters = word.upcase.split('')
+			 total = 0
+			letters.each do |letter|
+			total += letter_scores[letter]
+		end		
+		 total
+		end
+	private
+		def letter_scores
+			{	%w[a e i o u l n r s t] => 1,
+				%w[d g] => 2,
+			 	%w[b c m p] => 3,
+				%w[f h v w y] => 4,
+				%w[k] => 5,
+				%w[j x] => 8,
+				%w[q z] => 10
+				}.freeze
+		end  
+	end
+		puts "Type in one word for scrabble scorer"
+		word = gets.chomp
+		puts "Scrabble score for " + word + " is " + Scrabble.new(word).score.to_s
+```
+
+@snap[south span-100 text-gray text-08]
+@[1-5](You can step-and-ZOOM into fenced-code blocks, source files, and Github GIST.)
+@[6,7, zoom-13](Using GitPitch live code presenting with optional annotations.)
+@[8-9, zoom-12](This means no more switching between your slide deck and IDE on stage.)
+@snapend
+
+
+---?image=assets/img/code.jpg&opacity=60&position=left&size=45% 100%
+
+@snap[east span-50 text-center]
+##
+@snapend
+
+@snap[south-east span-50 text-center text-06]
+[Download GitPitch Desktop @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
+@snapend
+
