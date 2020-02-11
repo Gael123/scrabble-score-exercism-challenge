@@ -11,14 +11,11 @@ PRESENTED BY:GAEL JEROP
 
 @snapend
 
-
-An environmental engineer passionate about coding ,
+Am Gael
+Academically An environmental engineer passionate about coding ,
 
 Still a newbie started with Ruby on Rails about 8 months ago
 
---?color=linear-gradient(-15deg, #853b6e 20%, #002b36 60%)
-### SCRABBLE SCORE EXERCISM CHALLENGE:
-PRESENTED BY:GAEL JEROP
 
 ---?color=linear-gradient(60deg, #002b36 40%, #ddaf3c 80%)
 @title[The Exercism challenge]
@@ -192,16 +189,11 @@ letter_scores =
 		letter_scores.default = 0
     letter_scores.freeze
 
-
     def initialize(word)
 			@word = word
 			@word = " " if word == nil || word.length == 0
 			@word = @word.gsub(/\W/,"").upcase
 		 end
-
-
-
-
 
 ```
 @snapend
@@ -224,9 +216,6 @@ letter_scores =
 @snapend
 
 ---
-
-
-
 @snap[west span-100 text-gray bg-black fragment]
 ```ruby
 def score(word)
@@ -261,7 +250,6 @@ def score(word)
 - Then, for each letter in our word, we add the number of points associated with that word to our total.
 @ulend
 @snapend
-@snapend
 
 ---?color=linear-gradient(-15deg, #853b6e 20%, #002b36 60%)
 
@@ -270,4 +258,7 @@ def score(word)
 @snap[south-west span-100 text-center]
 ## Thank You:
 @snapend
+
+---?image=assets/thank.jpg&opacity=60&position=left&size=100% 100%
+
 
