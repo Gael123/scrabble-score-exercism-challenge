@@ -64,10 +64,10 @@ thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
 
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
 theme            : template
-theme-background : [ "#295F2D" ]
-theme-headline   : [ "Montserrat", "#FFE67C", "none", "#FFFFFF", "100", "120", "15" ]
-theme-byline     : [ "Raleway", "#FFFFFF", "none", "#FFE67C", "100", "110", "15" ]
-theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#FFE67C", "100", "100", "15" ]
+theme-background : [ "#1A0420" ]
+theme-headline   : [ "Montserrat", "#F2E3A1", "none", "#FFFFFF", "100", "120", "15" ]
+theme-byline     : [ "Raleway", "#FFFFFF", "none", "#F2E3A1", "100", "110", "15" ]
+theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#AEC994", "100", "100", "15" ]
 theme-links      : [ "#F1C40F", "#5254F7" ]
 theme-code       : [ "Source Code Pro", "100", "120" ]
 highlight        : tomorrow
