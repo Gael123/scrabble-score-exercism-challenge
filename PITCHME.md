@@ -1,19 +1,23 @@
 ### SCRABBLE SCORE EXERCISM CHALLENGE:
 PRESENTED BY:GAEL JEROP
 
----
+---?color=linear-gradient(-15deg, #853b6e 20%, #002b36 60%)
+@title[The Exercism challenge]
 
+@snap[north-west span-75]
 
 ### ABOUT ME:
+
+@snapend
 
 
 An environmental engineer passionate about coding ,
 
 Still a newbie started with Ruby on Rails about 8 months ago
 
-<!--  -->![IMAGE](assets/img/code.jpg)
 
----?color=linear-gradient(60deg, #ddaf3c 20%, #002b36 20%)
+
+---?color=linear-gradient(60deg, #002b36 40%, #ddaf3c 80%)
 @title[The Exercism challenge]
 
 @snap[north-west span-65]
@@ -32,17 +36,15 @@ Still a newbie started with Ruby on Rails about 8 months ago
 
 @snapend
 
-@snap[south span-100]
-@snapend
+<!-- @snap[south span-100]
+@snapend -->
 
 ---
 @title[The test]
 
-@snap[north-west span-50 text-center]
+@snap[north-west span-100 text-center bg-black]
 #### Tests:
-@snapend
 
-@snap[west span-75]
 ```ruby
 
 class ScrabbleTest &lt; Minitest::Test
@@ -67,11 +69,10 @@ class ScrabbleTest &lt; Minitest::Test
 
 
 ```
-@snapend
 
 ---
 
-
+@snap[north-west span-100 text-center bg-black]
 ```ruby
  def test_scores_other_very_short_word
     skip
@@ -90,10 +91,11 @@ class ScrabbleTest &lt; Minitest::Test
 
 
 ```
+@snapend
 
 ---
 
-@snap[south span-100 bg-black fragment]
+@snap[west span-100 bg-black fragment]
 ```ruby
 
 def test_scores_are_case_insensitive
@@ -112,7 +114,8 @@ end
 ```
 @snapend
 
----
+---?color=linear-gradient(60deg, #002b36 40%, #ddaf3c 80%)
+
 @title[the code Solution]
 
 @snap[north-west span-50 text-center]
@@ -122,12 +125,12 @@ end
 @ul[list-spaced-bullets text-09]
 - Defined the module Scarabble
 - Initialized it with word
-
 @ulend
+@snapend
 @snapend
 
 ---
-
+@snap[west span-100 bg-black fragment]
 ```ruby
 module Scrabble
 
@@ -148,8 +151,11 @@ module Scrabble
 
 
 ```
+@snapend
+
 ---
-@snap[south span-80 text-gray text-08]
+
+@snap[south span-80 text-gray text-08 bg-black]
 ```ruby
 
 private
@@ -171,7 +177,7 @@ private
 
 ```
 
-
+@snapend
 
 
 
